@@ -26,7 +26,7 @@ bool Trie::search(std::string s){
     curr->setIsEnd(true);
 }
 
-void Trie::search(struct trie* root, string str){
+void Trie::findChild(struct trie* root, string str){
         struct trie* cur = root;
         for (int i=0; i< str.length() ; i++)
         {
@@ -42,7 +42,7 @@ void Trie::search(struct trie* root, string str){
         return;
 }
 
-void Trie::insert(struct trie* root, string str){
+void Trie::appendChild(struct trie* root, string str){
         struct trie* cur = root;
         for (int i=0; i< str.length(); i++)
         {
